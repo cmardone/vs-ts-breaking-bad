@@ -18,9 +18,7 @@ const links: RouterLink[] = characterRoute
   <div>
     <h1>Characters</h1>
     <NavBar :show-icon="false" :links="links"></NavBar>
-    <Suspense>
-      <RouterView />
-    </Suspense>
+    <RouterView />
   </div>
 </template>
 
