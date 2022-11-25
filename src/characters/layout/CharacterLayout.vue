@@ -3,7 +3,7 @@ import type { RouteRecordRaw } from "vue-router";
 
 import NavBar from "@/shared/components/NavBar.vue";
 import { characterRoute } from "@/characters/router/index";
-import type { RouterLink } from "@/shared/types/RouterLink";
+import type { RouterLink } from "@/shared/types/routerLink";
 
 const links: RouterLink[] = characterRoute
   .children!.filter((item) => (item?.props as { visible: boolean }).visible)
@@ -18,7 +18,9 @@ const links: RouterLink[] = characterRoute
   <div>
     <h1>Characters</h1>
     <NavBar :show-icon="false" :links="links"></NavBar>
-    <RouterView />
+    <Suspense>
+      <RouterView />
+    </Suspense>
   </div>
 </template>
 

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { RouterLink } from "@/shared/types/RouterLink";
+import type { RouterLink } from "@/shared/types/routerLink";
 
 interface Props {
   title?: string;

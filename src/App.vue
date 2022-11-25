@@ -2,7 +2,7 @@
 import { RouterView } from "vue-router";
 
 import NavBar from "@/shared/components/NavBar.vue";
-import type { RouterLink } from "@/shared/types/RouterLink";
+import type { RouterLink } from "@/shared/types/routerLink";
 
 const links: RouterLink[] = [
   { path: "/", name: "home", title: "Home" },
